@@ -57,7 +57,7 @@ def render_sidebar(clf: SpamClassifier | None) -> float:
         if clf is not None:
             st.caption(
                 f"XGBoost classifier \n\n"
-                f"Vocabulary: {clf.vocabulary_size:,} words · Vector size: {clf.vector_size}"
+                # f"Vocabulary: {clf.vocabulary_size:,} words · Vector size: {clf.vector_size}"
             )
         # else:
         #     st.caption("Model not loaded.")
