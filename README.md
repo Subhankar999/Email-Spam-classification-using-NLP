@@ -10,6 +10,11 @@ This project applies NLP techniques to process email text and machine learning t
 
 The system accepts email text, preprocesses it, transforms it into numerical features, and uses a trained classification model to predict whether the email is spam or legitimate.
 
+## 🔗 Project Link
+
+- **🌐 Live :** [Email Spam Classification App](https://email-spam-classification-using-nlp-bjebaedipmb5jwebd7ldbj.streamlit.app/)
+
+
 ## ✨ Features
 
 - 📩 **Email Classification:** Predicts whether an email is Spam or Not Spam.
