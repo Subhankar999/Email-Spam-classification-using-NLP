@@ -88,11 +88,11 @@ def run_prediction(clf: SpamClassifier, threshold: float) -> None:
 def render_classify_tab(clf: SpamClassifier, threshold: float) -> None:
     left, right = st.columns([3, 2], gap="large")
     with left:
-        st.markdown("**Try a sample**")
-        for row_start in range(0, len(SAMPLE_EMAILS), 4):
-            cols = st.columns(4)
-            for col, (key, label, _text) in zip(cols, SAMPLE_EMAILS[row_start:row_start + 4]):
-                col.button(label, key=f"sample_{key}", on_click=use_sample, args=(key,), width="stretch")
+        # st.markdown("**Try a sample**")
+        # for row_start in range(0, len(SAMPLE_EMAILS), 4):
+        #     cols = st.columns(4)
+        #     for col, (key, label, _text) in zip(cols, SAMPLE_EMAILS[row_start:row_start + 4]):
+        #         col.button(label, key=f"sample_{key}", on_click=use_sample, args=(key,), width="stretch")
 
         st.text_area(
             "Email text",
