@@ -54,11 +54,11 @@ def render_sidebar(clf: SpamClassifier | None) -> float:
                  "0.50 matches the model's default decision.",
         )
         st.markdown("### Model")
-        # if clf is not None:
-        #     st.caption(
-        #         f"XGBoost classifier on averaged Word2Vec vectors.\n\n"
-        #         f"Vocabulary: {clf.vocabulary_size:,} words · Vector size: {clf.vector_size}"
-        #     )
+        if clf is not None:
+            st.caption(
+                f"XGBoost classifier \n\n"
+                f"Vocabulary: {clf.vocabulary_size:,} words · Vector size: {clf.vector_size}"
+            )
         # else:
         #     st.caption("Model not loaded.")
         # st.caption("History lives only in this browser session and is never saved to disk.")
