@@ -56,7 +56,7 @@ def render_sidebar(clf: SpamClassifier | None) -> float:
         st.markdown("### Model")
         if clf is not None:
             st.caption(
-                f"XGBoost classifier \n\n"
+                f"XGBoost Classifier \n\n"
                 # f"Vocabulary: {clf.vocabulary_size:,} words · Vector size: {clf.vector_size}"
             )
         # else:
